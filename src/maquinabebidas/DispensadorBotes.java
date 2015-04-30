@@ -19,8 +19,6 @@ public class DispensadorBotes {
         boolean monedaIn = true;
         boolean stock= true;
         do{
-            System.out.println("MENU");
-            System.out.println("---------------------");
             System.out.println("1- Cola");
             System.out.println("2- Limon");
             System.out.println("3- Naranja");
@@ -32,6 +30,7 @@ public class DispensadorBotes {
                 case 1:
                     if(boteCola!=0){
                         System.out.println(stock);
+                        boteCola--;
                     }else{
                         stock=false;
                         System.out.println(stock);
@@ -42,6 +41,7 @@ public class DispensadorBotes {
                 case 2:
                      if(boteLimon!=0){
                         System.out.println(stock);
+                        boteLimon--;
                     }else{
                         stock=false;
                         System.out.println(stock);
@@ -50,6 +50,7 @@ public class DispensadorBotes {
                 case 3:
                      if(boteNaranja!=0){
                         System.out.println(stock);
+                        boteNaranja--;
                     }else{
                         stock=false;
                         System.out.println(stock);
@@ -58,6 +59,7 @@ public class DispensadorBotes {
                 case 4:
                      if(boteTonica!=0){
                         System.out.println(stock);
+                        boteTonica--;
                     }else{
                         stock=false;
                         System.out.println(stock);
@@ -66,6 +68,7 @@ public class DispensadorBotes {
                 case 5:
                      if(boteAgua!=0){
                         System.out.println(stock);
+                        boteAgua--;
                     }else{
                         stock=false;
                         System.out.println(stock);
@@ -82,7 +85,11 @@ public class DispensadorBotes {
         
     }
     public boolean PulsarBoton(){
-        
+        System.out.println("Botes de Cola: "+boteCola);
+        System.out.println("Botes de Limon: "+boteLimon);
+        System.out.println("Botes de Naranja: "+boteNaranja);
+        System.out.println("Botes de Tonica: "+boteTonica);
+        System.out.println("Botes de Agua: "+boteAgua);
     }
     
     
